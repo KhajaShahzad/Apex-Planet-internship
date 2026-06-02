@@ -115,9 +115,15 @@ h2{
 }
 
 .project-card{
+    transition:0.3s;
     background:#1e293b;
     padding:30px;
     border-radius:10px;
+
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
 }
 
 form{
