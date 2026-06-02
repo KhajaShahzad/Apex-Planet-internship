@@ -2,55 +2,117 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahzad Portfolio</title>
+
+    <title>Shahzad | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <header>
+
         <nav>
-            <h2 class="logo">Shahzad</h2>
+
+            <h2 class="logo">Shahzad.</h2>
 
             <ul>
+
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <section class="hero">
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
 
         <div class="hero-text">
-            <h1>Hello, I'm Shahzad</h1>
-            <p>Full Stack Web Development Intern</p>
+
+            <h1>
+                Hi, I'm Shahzad
+            </h1>
+
+            <h3>
+                Full Stack Web Development Intern
+            </h3>
+
+            <p>
+                Passionate about building responsive,
+                modern and user-friendly web applications
+                using frontend and backend technologies.
+            </p>
 
             <button onclick="showMessage()">
-                Explore
+                Explore Portfolio
             </button>
+
         </div>
 
     </section>
+
+    <!-- ABOUT SECTION -->
 
     <section id="about">
 
         <h2>About Me</h2>
 
-        <p>
-            I am a passionate web development intern learning
-            HTML, CSS, JavaScript, PHP and MySQL.
-        </p>
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p>
+
+                    I am a passionate and self-driven web development
+                    intern currently learning and exploring full stack
+                    web technologies.
+
+                    I enjoy building responsive websites and web
+                    applications using HTML, CSS, JavaScript,
+                    PHP and MySQL.
+
+                </p>
+
+                <p>
+
+                    Along with frontend design, I am also improving
+                    my backend development and database management skills.
+
+                    I have worked on projects such as portfolio websites,
+                    billing management systems and inventory management applications.
+
+                </p>
+
+                <p>
+
+                    My goal is to continuously improve my development skills,
+                    gain practical industry experience and become a strong
+                    software developer.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
+    <!-- SKILLS SECTION -->
+
     <section id="skills">
 
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
 
         <div class="skills-container">
 
@@ -59,11 +121,15 @@
             <div class="card">JavaScript</div>
             <div class="card">PHP</div>
             <div class="card">MySQL</div>
-            <div class="card">GitHub</div>
+            <div class="card">Git & GitHub</div>
+            <div class="card">Responsive Design</div>
+            <div class="card">Frontend Development</div>
 
         </div>
 
     </section>
+
+    <!-- PROJECT SECTION -->
 
     <section id="projects">
 
@@ -72,18 +138,65 @@
         <div class="project-container">
 
             <div class="project-card">
+
                 <h3>Portfolio Website</h3>
-                <p>Responsive personal portfolio using HTML CSS JS.</p>
+
+                <p>
+                    Designed and developed a responsive
+                    personal portfolio website using
+                    HTML, CSS and JavaScript.
+                </p>
+
             </div>
 
             <div class="project-card">
-                <h3>Billing Management</h3>
-                <p>MERN Stack inventory and billing management system.</p>
+
+                <h3>Inventory Management System</h3>
+
+                <p>
+                    Developed an inventory and billing
+                    management application for managing
+                    products, sales and expenses.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Responsive Landing Page</h3>
+
+                <p>
+                    Created modern responsive landing pages
+                    with clean UI design and mobile support.
+                </p>
+
             </div>
 
         </div>
 
     </section>
+
+    <!-- EDUCATION SECTION -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="project-card">
+
+            <h3>Bachelor of Engineering</h3>
+
+            <p>
+                Currently pursuing engineering with interest
+                in software development, web technologies,
+                and problem solving.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
 
     <section id="contact">
 
@@ -92,29 +205,37 @@
         <form id="contactForm">
 
             <input type="text"
-                   placeholder="Enter Name"
+                   placeholder="Enter Your Name"
                    required>
 
             <input type="email"
                    id="email"
-                   placeholder="Enter Email"
+                   placeholder="Enter Your Email"
                    required>
 
-            <textarea placeholder="Enter Message"></textarea>
+            <textarea rows="6"
+                      placeholder="Enter Your Message"></textarea>
 
             <button type="submit">
-                Submit
+                Send Message
             </button>
 
         </form>
 
     </section>
 
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 Shahzad Portfolio</p>
+
+        <p>
+            © 2026 Shahzad Portfolio | All Rights Reserved
+        </p>
+
     </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
