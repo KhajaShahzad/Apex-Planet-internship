@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSphere - Interactive UI & Frontend Development Portal</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Discover full-stack development internship resources at DevSphere. Interactive UI dashboards, login, and registration panels built with Bootstrap 5.">
+    <meta name="keywords" content="DevSphere, Internship, HTML, CSS, JavaScript, Bootstrap 5, AJAX, PHP, Web Development">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Dynamic Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="page-fade-in">
+
+        <!-- Hero Section -->
+        <section class="hero-gradient-bg py-5 text-center text-lg-start">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="badge bg-success mb-3 px-3 py-2 text-uppercase fw-bold">Internship Program 2026</span>
+                        <h1 class="display-3 fw-bold mb-4">Empowering the Next Generation of Tech Leaders</h1>
+                        <p class="lead mb-4 text-white-50">Master Interactive UI & Frontend Development with DevSphere. Accelerate your career using HTML5, CSS3, ES6 JavaScript, Bootstrap 5, and AJAX API integrations.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                            <a href="register.html" class="btn btn-apex-accent btn-lg">Start Free Trial</a>
+                            <a href="login.html" class="btn btn-apex-outline btn-lg">Access Portal</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center d-none d-lg-block">
+                        <!-- Abstract Visual Card for Logo/Branding -->
+                        <div class="glass-panel p-5 text-center shadow-lg border-0" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <i class="bi bi-rocket-takeoff text-warning" style="font-size: 5rem;"></i>
+                            <h3 class="text-white mt-4 fw-bold">DevSphere</h3>
+                            <p class="text-white-50 small mb-0">Software Solutions & Training Systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Feature Showcase Section -->
+        <section class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark">Interactive Learning & Training</h2>
+                    <p class="text-muted">Explore how our frontend development workspace enables swift skill acquisition.</p>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Bootstrap 5 Carousel -->
+                        <div id="devSphereCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#devSphereCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#devSphereCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#devSphereCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <div class="p-5 text-white d-flex align-items-center justify-content-center flex-column text-center" style="min-height: 350px; background: linear-gradient(135deg, #005C53 0%, #042940 100%);">
+                                        <i class="bi bi-bootstrap-fill text-warning mb-3" style="font-size: 3.5rem;"></i>
+                                        <h3 class="fw-bold">Step 1: Bootstrap 5 Mastery</h3>
+                                        <p class="max-width-600 px-lg-5">Learn rows, columns, media queries, flexbox components, responsive utility tags, collapse modules, and dynamic popups.</p>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <div class="p-5 text-white d-flex align-items-center justify-content-center flex-column text-center" style="min-height: 350px; background: linear-gradient(135deg, #042940 0%, #005C53 100%);">
+                                        <i class="bi bi-shield-check text-info mb-3" style="font-size: 3.5rem;"></i>
+                                        <h3 class="fw-bold">Step 2: Dynamic Form Validations</h3>
+                                        <p class="max-width-600 px-lg-5">Utilize modern vanilla JavaScript events to check password matching, compute password strength indicators, and prevent form vulnerabilities.</p>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                                    <div class="p-5 text-white d-flex align-items-center justify-content-center flex-column text-center" style="min-height: 350px; background: linear-gradient(135deg, #005C53 0%, #9FC131 100%);">
+                                        <i class="bi bi-arrow-repeat text-light mb-3" style="font-size: 3.5rem;"></i>
+                                        <h3 class="fw-bold">Step 3: Real-Time AJAX Backend Checks</h3>
+                                        <p class="max-width-600 px-lg-5">Fetch JSON payloads from a PHP validator module asynchronously without page refreshes, providing seamless instant feedback to users.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#devSphereCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#devSphereCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section with Cards & Responsive Grid -->
+        <section class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-success text-uppercase fw-bold small">Core Competencies</span>
+                    <h2 class="fw-bold text-dark mt-2">What You Will Deliver</h2>
+                    <p class="text-muted">High-quality responsive systems configured with clean development methodologies.</p>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover-effect h-100 p-4 shadow-sm bg-white">
+                            <div class="card-icon-wrapper">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Mobile-First Design</h4>
+                            <p class="text-muted mb-0">Fully responsive layouts tested across multiple resolutions. Everything fits screens of all sizes, from mobile phones to high-definition monitors.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover-effect h-100 p-4 shadow-sm bg-white">
+                            <div class="card-icon-wrapper">
+                                <i class="bi bi-lock-fill"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Security & Feedback</h4>
+                            <p class="text-muted mb-0">Show password toggles, dynamic password matching alerts, and password complexity score meters provide instant clarity and security indicators.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover-effect h-100 p-4 shadow-sm bg-white">
+                            <div class="card-icon-wrapper">
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">AJAX Integrations</h4>
+                            <p class="text-muted mb-0">Debounced, non-blocking check requests verify credentials against server databases using standard PHP APIs, reducing server overhead.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Modal Trigger Container -->
+                <div class="text-center mt-5 pt-3">
+                    <h5 class="mb-3">Need assistance with your task credentials?</h5>
+                    <button class="btn btn-apex-primary" data-bs-toggle="modal" data-bs-target="#contactSupportModal">
+                        <i class="bi bi-chat-right-text me-2"></i>Contact Advisor Support
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Dynamic Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Contact Support Modal (Bootstrap 5 Modal Component) -->
+    <div class="modal fade" id="contactSupportModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-panel" style="border-top: 5px solid var(--primary-color);">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="contactModalLabel">
+                        <i class="bi bi-headset text-success me-2"></i>Contact Advisor Support
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="advisorSupportForm">
+                    <div class="modal-body">
+                        <p class="text-muted small">Submit your issue below. A DevSphere academic mentor will get back to you within 24 hours.</p>
+                        
+                        <div class="mb-3">
+                            <label for="supportName" class="form-label small fw-bold">Full Name</label>
+                            <input type="text" class="form-control" id="supportName" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="supportEmail" class="form-label small fw-bold">Email Address</label>
+                            <input type="email" class="form-control" id="supportEmail" placeholder="name@example.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="supportMessage" class="form-label small fw-bold">Message Details</label>
+                            <textarea class="form-control" id="supportMessage" rows="4" placeholder="Explain your query here..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-apex-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6Rzsn9gE4gAM5x9QQv5gtT7rkP9kF1rY3gHB60NNkmXc5s9fDVZLESaAA55NDzOx" crossorigin="anonymous"></script>
+
+    <!-- Component dynamic loader script -->
+    <script src="js/components.js"></script>
+    
+    <!-- Validation logic link -->
+    <script src="js/validation.js"></script>
+
+    <!-- Custom inline modal helper handler for this page -->
+    <script>
+        document.getElementById('advisorSupportForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const modalEl = document.getElementById('contactSupportModal');
+            const modalInstance = bootstrap.Modal.getInstance(modalEl);
+            modalInstance.hide();
+            
+            // Trigger standard success alert
+            showSuccessModal("Support Message Sent!", "Your request has been submitted successfully. A mentor will contact you soon.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* Import modern clean Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #005C53;
+    --primary-dark: #042940;
+    --accent-color: #9FC131;
+    --highlight-color: #DBF227;
+    --neutral-light: #F8F9FA;
+    --neutral-dark: #212529;
+    --white: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow-soft: 0 8px 32px 0 rgba(0, 92, 83, 0.08);
+    --shadow-accent: 0 8px 25px 0 rgba(159, 193, 49, 0.25);
+    --font-outfit: 'Outfit', sans-serif;
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    font-family: var(--font-outfit);
+    background-color: var(--neutral-light);
+    color: var(--neutral-dark);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Reusable Dynamic Hero Background */
+.hero-gradient-bg {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 60%, rgba(159, 193, 49, 0.8) 100%);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(219, 242, 39, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-smooth);
+}
+
+.glass-panel:hover {
+    box-shadow: 0 12px 40px 0 rgba(0, 92, 83, 0.15);
+}
+
+/* Premium Buttons */
+.btn-apex-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+}
+
+.btn-apex-primary:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-apex-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+}
+
+.btn-apex-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.btn-apex-accent {
+    background-color: var(--accent-color);
+    color: var(--primary-dark);
+    border: 2px solid var(--accent-color);
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+}
+
+.btn-apex-accent:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-accent);
+}
+
+/* Navbar Customizations */
+.navbar {
+    background-color: rgba(4, 41, 64, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--primary-color);
+    transition: var(--transition-smooth);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand span.logo-green {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 8px;
+    background-color: var(--accent-color);
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: calc(100% - 16px);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Footer Customizations */
+.footer {
+    background-color: var(--primary-dark);
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 4px solid var(--primary-color);
+    padding: 40px 0 20px;
+    margin-top: auto;
+}
+
+.footer h5 {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+/* Custom Card Hover Effects */
+.card-hover-effect {
+    border: none;
+    border-radius: 12px;
+    transition: var(--transition-smooth);
+    overflow: hidden;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 92, 83, 0.12);
+}
+
+.card-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 92, 83, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition: var(--transition-smooth);
+}
+
+.card-hover-effect:hover .card-icon-wrapper {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+/* Form Inputs Styling */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 92, 83, 0.25);
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: var(--primary-color);
+}
+
+.input-group-text-btn {
+    cursor: pointer;
+    background-color: var(--white);
+    border-left: none;
+    transition: var(--transition-smooth);
+}
+
+.input-group-text-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Password Strength Bar */
+.password-strength-container {
+    height: 6px;
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Fade in page animation */
+.page-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Carousel Custom Styling */
+.carousel-inner {
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+}
+
+.carousel-caption {
+    background: rgba(4, 41, 64, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 4px solid var(--accent-color);
+}
+
+/* Spinner Custom Style for AJAX check */
+.ajax-spinner {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    display: none;
+}

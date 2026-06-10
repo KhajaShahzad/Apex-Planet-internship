@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSphere - Student & Member Login</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Access your DevSphere portal. Log in securely with valid credentials.">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .login-container {
+            max-width: 480px;
+            margin: 60px auto;
+        }
+        
+        .login-hero-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-color);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: -35px auto 20px;
+            box-shadow: var(--shadow-soft);
+            border: 4px solid var(--white);
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Dynamic Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="page-fade-in d-flex align-items-center">
+        <div class="container">
+            <div class="login-container">
+                <div class="card glass-panel border-0 shadow-lg position-relative mt-5">
+                    
+                    <!-- Floating circular lock icon -->
+                    <div class="login-hero-icon">
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </div>
+                    
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <h3 class="fw-bold text-dark mb-1">Welcome Back</h3>
+                            <p class="text-muted small">Access your DevSphere portal console</p>
+                        </div>
+                        
+                        <!-- Login Form -->
+                        <form id="loginForm" novalidate>
+                            
+                            <!-- Email Input -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required>
+                                <label for="loginEmail"><i class="bi bi-envelope me-2"></i>Email Address</label>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            
+                            <!-- Password Input with Toggle Button -->
+                            <div class="input-group mb-3">
+                                <div class="form-floating flex-grow-1">
+                                    <input type="password" class="form-control" id="loginPassword" placeholder="Password" style="border-top-right-radius: 0; border-bottom-right-radius: 0;" required>
+                                    <label for="loginPassword"><i class="bi bi-key me-2"></i>Password</label>
+                                </div>
+                                <span class="input-group-text input-group-text-btn toggle-password" id="loginPasswordToggle">
+                                    <i class="bi bi-eye-fill"></i>
+                                </span>
+                                <div class="invalid-feedback">
+                                    Password field cannot be empty.
+                                </div>
+                            </div>
+                            
+                            <!-- Remember Me & Forgot Password -->
+                            <div class="d-flex justify-content-between align-items-center mb-4 small">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                                    <label class="form-check-label text-muted" for="rememberMe">
+                                        Remember session
+                                    </label>
+                                </div>
+                                <a href="#" class="text-decoration-none text-success fw-bold">Forgot password?</a>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-apex-primary w-100 py-3 fw-bold mb-3">
+                                Sign In <i class="bi bi-box-arrow-in-right ms-2"></i>
+                            </button>
+                            
+                            <!-- Redirect to Register -->
+                            <div class="text-center">
+                                <p class="text-muted small mb-0">Don't have an account yet? <a href="register.html" class="text-success fw-bold text-decoration-none">Register Now</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Dynamic Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6Rzsn9gE4gAM5x9QQv5gtT7rkP9kF1rY3gHB60NNkmXc5s9fDVZLESaAA55NDzOx" crossorigin="anonymous"></script>
+
+    <!-- Component dynamic loader script -->
+    <script src="js/components.js"></script>
+    
+    <!-- Validation and interactive logic script -->
+    <script src="js/validation.js"></script>
+</body>
+</html>
