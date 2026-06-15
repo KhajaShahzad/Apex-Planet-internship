@@ -1,0 +1,3 @@
+# This directory is used to store user profile picture uploads.
+# It is writable by the web server.
+# Direct directory browsing is disabled via .htaccess above.
