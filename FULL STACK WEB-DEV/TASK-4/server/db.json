@@ -1,0 +1,220 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Apex Administrator",
+      "email": "admin@zenith.com",
+      "password": "admin123",
+      "role": "admin",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=admin",
+      "createdAt": "2026-05-01T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "user@zenith.com",
+      "password": "user123",
+      "role": "customer",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=jane",
+      "createdAt": "2026-05-15T14:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "John Smith",
+      "email": "john@example.com",
+      "password": "user123",
+      "role": "customer",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=john",
+      "createdAt": "2026-06-01T09:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Alice Wilson",
+      "email": "alice@example.com",
+      "password": "user123",
+      "role": "customer",
+      "status": "suspended",
+      "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=alice",
+      "createdAt": "2026-06-05T18:22:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Aether mechanical keyboard",
+      "description": "Tactile clicky switches, vibrant customizable RGB backlighting, aircraft-grade aluminum top plate, and magnetic wrist rest.",
+      "price": 129.99,
+      "category": "Peripherals",
+      "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.8,
+      "stock": 47,
+      "createdAt": "2026-05-01T12:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Apex Precision Mouse",
+      "description": "Ultra-lightweight 58g design, 26K DPI optical sensor, optical switches, and 100-hour battery life with HyperSpeed wireless.",
+      "price": 79.99,
+      "category": "Peripherals",
+      "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.7,
+      "stock": 65,
+      "createdAt": "2026-05-02T12:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Aero Sound ANC Headphones",
+      "description": "Active Noise Cancelling over-ear headphones, hi-res wireless audio, 40-hour playtime, and ultra-plush memory foam earcups.",
+      "price": 199.99,
+      "category": "Audio",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.9,
+      "stock": 18,
+      "createdAt": "2026-05-03T12:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Pulse Sport Smartwatch",
+      "description": "AMOLED display, integrated GPS, heart-rate tracking, sleep tracking, 5ATM water resistance, and 14-day battery life.",
+      "price": 149.99,
+      "category": "Wearables",
+      "image": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.5,
+      "stock": 35,
+      "createdAt": "2026-05-04T12:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Nebula 4K Portable Projector",
+      "description": "Ultra-compact smart projector, Android TV built-in, 1000 ANSI Lumens, dual 10W speakers, and instant auto-focus.",
+      "price": 499.99,
+      "category": "Video",
+      "image": "https://images.unsplash.com/photo-1535016120720-40c646be5580?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.6,
+      "stock": 12,
+      "createdAt": "2026-05-05T12:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "name": "Lumina Curved OLED Monitor",
+      "description": "34-inch ultra-wide curved gaming monitor, 240Hz refresh rate, 0.03ms response time, 99% DCI-P3, and height adjustable stand.",
+      "price": 899.99,
+      "category": "Video",
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.9,
+      "stock": 8,
+      "createdAt": "2026-05-06T12:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "name": "Echo Pods Wireless Earbuds",
+      "description": "Ultra-compact in-ear buds, IPX7 waterproof, touch controls, and sweatproof charging case with wireless charging support.",
+      "price": 59.99,
+      "category": "Audio",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.3,
+      "stock": 117,
+      "createdAt": "2026-05-07T12:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "name": "Zenith power bank 20K",
+      "description": "20,000mAh external battery pack with 65W Power Delivery, smart LED status display, and multi-device fast charging.",
+      "price": 49.99,
+      "category": "Accessories",
+      "image": "https://images.unsplash.com/photo-1609592424109-dd9892f1b17c?q=80&w=600&auto=format&fit=crop",
+      "rating": 4.4,
+      "stock": 80,
+      "createdAt": "2026-05-08T12:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "userId": 2,
+      "userName": "Jane Doe",
+      "items": [
+        {
+          "productId": 1,
+          "name": "Aether mechanical keyboard",
+          "price": 129.99,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "name": "Apex Precision Mouse",
+          "price": 79.99,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 209.98,
+      "status": "delivered",
+      "shippingAddress": "123 Tech Lane, Silicon Valley, CA 94025",
+      "paymentMethod": "Credit Card",
+      "createdAt": "2026-06-10T11:20:00.000Z"
+    },
+    {
+      "id": 1002,
+      "userId": 3,
+      "userName": "John Smith",
+      "items": [
+        {
+          "productId": 3,
+          "name": "Aero Sound ANC Headphones",
+          "price": 199.99,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 199.99,
+      "status": "shipped",
+      "shippingAddress": "456 Developer Blvd, Austin, TX 78701",
+      "paymentMethod": "PayPal",
+      "createdAt": "2026-06-12T15:45:00.000Z"
+    },
+    {
+      "id": 1003,
+      "userId": 2,
+      "userName": "Jane Doe",
+      "items": [
+        {
+          "productId": 7,
+          "name": "Echo Pods Wireless Earbuds",
+          "price": 59.99,
+          "quantity": 2
+        },
+        {
+          "productId": 8,
+          "name": "Zenith power bank 20K",
+          "price": 49.99,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 169.97,
+      "status": "pending",
+      "shippingAddress": "123 Tech Lane, Silicon Valley, CA 94025",
+      "paymentMethod": "Credit Card",
+      "createdAt": "2026-06-15T09:00:00.000Z"
+    },
+    {
+      "id": 1004,
+      "userId": 1,
+      "userName": "Apex Administrator",
+      "items": [
+        {
+          "productId": 7,
+          "name": "Echo Pods Wireless Earbuds",
+          "price": 59.99,
+          "quantity": 3
+        }
+      ],
+      "totalAmount": 194.37,
+      "status": "delivered",
+      "shippingAddress": "India",
+      "paymentMethod": "PayPal",
+      "createdAt": "2026-06-24T16:59:21.362Z"
+    }
+  ]
+}
