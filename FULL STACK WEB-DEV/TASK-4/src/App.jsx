@@ -67,7 +67,7 @@ export default function App() {
     showToast("Successfully logged out.", "info");
   };
 
-  // Cart Operations
+  // Cart Operations 
   const onAddToCart = (product, quantity = 1) => {
     setCart(prevCart => {
       const existingIdx = prevCart.findIndex(item => item.id === product.id);
@@ -99,7 +99,7 @@ export default function App() {
     if (quantity <= 0) {
       removeFromCart(productId);
       return;
-    }
+    }                 
 
     // Check inventory availability from database
     fetch(`http://localhost:5000/api/products/${productId}`)
@@ -108,7 +108,7 @@ export default function App() {
         setCart(prevCart => {
           return prevCart.map(item => {
             if (item.id === productId) {
-              if (quantity > product.stock) {
+              if (quantity > product.stock) {                
                 showToast(`Only ${product.stock} units available. Stock limit reached.`, "warning");
                 return { ...item, quantity: product.stock };
               }
@@ -119,7 +119,7 @@ export default function App() {
         });
       })
       .catch(err => {
-        showToast("Error checking item stock levels.", "danger");
+        showToast("Error g item stock levels.", "danger");
       });
   };
 
@@ -147,7 +147,7 @@ export default function App() {
           <Home 
             currentUser={currentUser}
             onAddToCart={onAddToCart} 
-            onViewDetails={onViewDetails} 
+            onViewDetails={onViewDetails}   
             showToast={showToast} 
           />
         );
@@ -236,7 +236,7 @@ export default function App() {
             showToast={showToast}
           />
         );
-      case 'admin-orders':
+      case 'admin-orders':  
         if (!currentUser || currentUser.role !== 'admin') {
           setCurrentTab('storefront');
           return null;

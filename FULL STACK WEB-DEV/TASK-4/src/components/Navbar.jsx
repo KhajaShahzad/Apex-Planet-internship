@@ -101,7 +101,7 @@ export default function Navbar({ currentUser, cart, currentTab, setCurrentTab, l
             border: 'none',
             color: currentTab === 'cart' ? '#ffffff' : 'var(--text-muted)',
             cursor: 'pointer',
-            padding: '0.5rem',
+            padding: '0.5rem',  
             position: 'relative',
             borderRadius: 8,
             display: 'flex',
